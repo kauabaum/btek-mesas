@@ -46,14 +46,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AdicionarMesasView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AdicionarMesasView.Designer.cs">
+      <DependentUpon>AdicionarMesasView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdicionarProdutosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdicionarProdutosView.Designer.cs">
+      <DependentUpon>AdicionarProdutosView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceiroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinanceiroView.Designer.cs">
+      <DependentUpon>FinanceiroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalView.Designer.cs">
+      <DependentUpon>PrincipalView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdicionarMesasView.resx">
+      <DependentUpon>AdicionarMesasView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdicionarProdutosView.resx">
+      <DependentUpon>AdicionarProdutosView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinanceiroView.resx">
+      <DependentUpon>FinanceiroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalView.resx">
+      <DependentUpon>PrincipalView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +106,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\318217790_104693535824908_3461106099253519531_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mesa-circular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\produtos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinheiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardapio.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
