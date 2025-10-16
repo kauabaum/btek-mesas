@@ -154,6 +154,7 @@
             this.btnMesa1.TabIndex = 6;
             this.btnMesa1.Text = "1";
             this.btnMesa1.UseVisualStyleBackColor = false;
+            this.btnMesa1.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa2
             // 
@@ -167,6 +168,7 @@
             this.btnMesa2.TabIndex = 7;
             this.btnMesa2.Text = "2";
             this.btnMesa2.UseVisualStyleBackColor = false;
+            this.btnMesa2.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa3
             // 
@@ -180,6 +182,7 @@
             this.btnMesa3.TabIndex = 8;
             this.btnMesa3.Text = "3";
             this.btnMesa3.UseVisualStyleBackColor = false;
+            this.btnMesa3.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa4
             // 
@@ -193,6 +196,7 @@
             this.btnMesa4.TabIndex = 9;
             this.btnMesa4.Text = "4";
             this.btnMesa4.UseVisualStyleBackColor = false;
+            this.btnMesa4.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa5
             // 
@@ -206,6 +210,7 @@
             this.btnMesa5.TabIndex = 10;
             this.btnMesa5.Text = "5";
             this.btnMesa5.UseVisualStyleBackColor = false;
+            this.btnMesa5.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa6
             // 
@@ -219,6 +224,7 @@
             this.btnMesa6.TabIndex = 11;
             this.btnMesa6.Text = "6";
             this.btnMesa6.UseVisualStyleBackColor = false;
+            this.btnMesa6.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa7
             // 
@@ -232,6 +238,7 @@
             this.btnMesa7.TabIndex = 12;
             this.btnMesa7.Text = "7";
             this.btnMesa7.UseVisualStyleBackColor = false;
+            this.btnMesa7.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa8
             // 
@@ -245,6 +252,7 @@
             this.btnMesa8.TabIndex = 13;
             this.btnMesa8.Text = "8";
             this.btnMesa8.UseVisualStyleBackColor = false;
+            this.btnMesa8.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa9
             // 
@@ -258,6 +266,7 @@
             this.btnMesa9.TabIndex = 14;
             this.btnMesa9.Text = "9";
             this.btnMesa9.UseVisualStyleBackColor = false;
+            this.btnMesa9.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa10
             // 
@@ -271,6 +280,7 @@
             this.btnMesa10.TabIndex = 15;
             this.btnMesa10.Text = "10";
             this.btnMesa10.UseVisualStyleBackColor = false;
+            this.btnMesa10.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa11
             // 
@@ -284,6 +294,7 @@
             this.btnMesa11.TabIndex = 16;
             this.btnMesa11.Text = "11";
             this.btnMesa11.UseVisualStyleBackColor = false;
+            this.btnMesa11.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa12
             // 
@@ -297,6 +308,7 @@
             this.btnMesa12.TabIndex = 17;
             this.btnMesa12.Text = "12";
             this.btnMesa12.UseVisualStyleBackColor = false;
+            this.btnMesa12.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa23
             // 
@@ -310,6 +322,7 @@
             this.btnMesa23.TabIndex = 18;
             this.btnMesa23.Text = "23";
             this.btnMesa23.UseVisualStyleBackColor = false;
+            this.btnMesa23.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa34
             // 
@@ -323,6 +336,7 @@
             this.btnMesa34.TabIndex = 19;
             this.btnMesa34.Text = "34";
             this.btnMesa34.UseVisualStyleBackColor = false;
+            this.btnMesa34.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa13
             // 
@@ -336,6 +350,7 @@
             this.btnMesa13.TabIndex = 20;
             this.btnMesa13.Text = "13";
             this.btnMesa13.UseVisualStyleBackColor = false;
+            this.btnMesa13.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa14
             // 
@@ -349,6 +364,7 @@
             this.btnMesa14.TabIndex = 21;
             this.btnMesa14.Text = "14";
             this.btnMesa14.UseVisualStyleBackColor = false;
+            this.btnMesa14.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa15
             // 
@@ -362,6 +378,7 @@
             this.btnMesa15.TabIndex = 22;
             this.btnMesa15.Text = "15";
             this.btnMesa15.UseVisualStyleBackColor = false;
+            this.btnMesa15.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa16
             // 
@@ -375,6 +392,7 @@
             this.btnMesa16.TabIndex = 23;
             this.btnMesa16.Text = "16";
             this.btnMesa16.UseVisualStyleBackColor = false;
+            this.btnMesa16.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa17
             // 
@@ -388,6 +406,7 @@
             this.btnMesa17.TabIndex = 24;
             this.btnMesa17.Text = "17";
             this.btnMesa17.UseVisualStyleBackColor = false;
+            this.btnMesa17.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa18
             // 
@@ -401,6 +420,7 @@
             this.btnMesa18.TabIndex = 25;
             this.btnMesa18.Text = "18";
             this.btnMesa18.UseVisualStyleBackColor = false;
+            this.btnMesa18.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa19
             // 
@@ -414,6 +434,7 @@
             this.btnMesa19.TabIndex = 26;
             this.btnMesa19.Text = "19";
             this.btnMesa19.UseVisualStyleBackColor = false;
+            this.btnMesa19.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa20
             // 
@@ -427,6 +448,7 @@
             this.btnMesa20.TabIndex = 27;
             this.btnMesa20.Text = "20";
             this.btnMesa20.UseVisualStyleBackColor = false;
+            this.btnMesa20.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa21
             // 
@@ -440,6 +462,7 @@
             this.btnMesa21.TabIndex = 28;
             this.btnMesa21.Text = "21";
             this.btnMesa21.UseVisualStyleBackColor = false;
+            this.btnMesa21.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa22
             // 
@@ -453,6 +476,7 @@
             this.btnMesa22.TabIndex = 29;
             this.btnMesa22.Text = "22";
             this.btnMesa22.UseVisualStyleBackColor = false;
+            this.btnMesa22.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa24
             // 
@@ -466,6 +490,7 @@
             this.btnMesa24.TabIndex = 30;
             this.btnMesa24.Text = "24";
             this.btnMesa24.UseVisualStyleBackColor = false;
+            this.btnMesa24.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa25
             // 
@@ -479,6 +504,7 @@
             this.btnMesa25.TabIndex = 31;
             this.btnMesa25.Text = "25";
             this.btnMesa25.UseVisualStyleBackColor = false;
+            this.btnMesa25.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa26
             // 
@@ -492,6 +518,7 @@
             this.btnMesa26.TabIndex = 32;
             this.btnMesa26.Text = "26";
             this.btnMesa26.UseVisualStyleBackColor = false;
+            this.btnMesa26.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa27
             // 
@@ -505,6 +532,7 @@
             this.btnMesa27.TabIndex = 33;
             this.btnMesa27.Text = "27";
             this.btnMesa27.UseVisualStyleBackColor = false;
+            this.btnMesa27.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa30
             // 
@@ -518,6 +546,7 @@
             this.btnMesa30.TabIndex = 34;
             this.btnMesa30.Text = "30";
             this.btnMesa30.UseVisualStyleBackColor = false;
+            this.btnMesa30.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa28
             // 
@@ -531,6 +560,7 @@
             this.btnMesa28.TabIndex = 34;
             this.btnMesa28.Text = "28";
             this.btnMesa28.UseVisualStyleBackColor = false;
+            this.btnMesa28.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa29
             // 
@@ -544,6 +574,7 @@
             this.btnMesa29.TabIndex = 35;
             this.btnMesa29.Text = "29";
             this.btnMesa29.UseVisualStyleBackColor = false;
+            this.btnMesa29.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa31
             // 
@@ -557,6 +588,7 @@
             this.btnMesa31.TabIndex = 36;
             this.btnMesa31.Text = "31";
             this.btnMesa31.UseVisualStyleBackColor = false;
+            this.btnMesa31.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa32
             // 
@@ -570,6 +602,7 @@
             this.btnMesa32.TabIndex = 37;
             this.btnMesa32.Text = "32";
             this.btnMesa32.UseVisualStyleBackColor = false;
+            this.btnMesa32.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa33
             // 
@@ -583,6 +616,7 @@
             this.btnMesa33.TabIndex = 38;
             this.btnMesa33.Text = "33";
             this.btnMesa33.UseVisualStyleBackColor = false;
+            this.btnMesa33.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa35
             // 
@@ -596,6 +630,7 @@
             this.btnMesa35.TabIndex = 39;
             this.btnMesa35.Text = "35";
             this.btnMesa35.UseVisualStyleBackColor = false;
+            this.btnMesa35.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa36
             // 
@@ -609,6 +644,7 @@
             this.btnMesa36.TabIndex = 40;
             this.btnMesa36.Text = "36";
             this.btnMesa36.UseVisualStyleBackColor = false;
+            this.btnMesa36.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa37
             // 
@@ -622,6 +658,7 @@
             this.btnMesa37.TabIndex = 41;
             this.btnMesa37.Text = "37";
             this.btnMesa37.UseVisualStyleBackColor = false;
+            this.btnMesa37.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa38
             // 
@@ -635,6 +672,7 @@
             this.btnMesa38.TabIndex = 42;
             this.btnMesa38.Text = "38";
             this.btnMesa38.UseVisualStyleBackColor = false;
+            this.btnMesa38.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa39
             // 
@@ -648,6 +686,7 @@
             this.btnMesa39.TabIndex = 43;
             this.btnMesa39.Text = "39";
             this.btnMesa39.UseVisualStyleBackColor = false;
+            this.btnMesa39.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa40
             // 
@@ -661,6 +700,7 @@
             this.btnMesa40.TabIndex = 44;
             this.btnMesa40.Text = "40";
             this.btnMesa40.UseVisualStyleBackColor = false;
+            this.btnMesa40.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa41
             // 
@@ -674,6 +714,7 @@
             this.btnMesa41.TabIndex = 45;
             this.btnMesa41.Text = "41";
             this.btnMesa41.UseVisualStyleBackColor = false;
+            this.btnMesa41.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa42
             // 
@@ -687,6 +728,7 @@
             this.btnMesa42.TabIndex = 46;
             this.btnMesa42.Text = "42";
             this.btnMesa42.UseVisualStyleBackColor = false;
+            this.btnMesa42.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa43
             // 
@@ -700,6 +742,7 @@
             this.btnMesa43.TabIndex = 47;
             this.btnMesa43.Text = "43";
             this.btnMesa43.UseVisualStyleBackColor = false;
+            this.btnMesa43.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnMesa44
             // 
@@ -713,6 +756,7 @@
             this.btnMesa44.TabIndex = 48;
             this.btnMesa44.Text = "44";
             this.btnMesa44.UseVisualStyleBackColor = false;
+            this.btnMesa44.Click += new System.EventHandler(this.BtnMesa_Click);
             // 
             // btnFinalizarMesa
             // 
@@ -727,6 +771,7 @@
             this.btnFinalizarMesa.Text = "F5 - Atualizar Mesas";
             this.toolTip1.SetToolTip(this.btnFinalizarMesa, "Atualizar Mesas");
             this.btnFinalizarMesa.UseVisualStyleBackColor = false;
+            this.btnFinalizarMesa.Click += new System.EventHandler(this.CarregarDados_Click);
             // 
             // label1
             // 
@@ -784,6 +829,7 @@
             this.btnPessoaMesa1.Text = "1";
             this.btnPessoaMesa1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa1.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa1.Visible = false;
             // 
             // btnPessoaMesa2
             // 
@@ -798,6 +844,7 @@
             this.btnPessoaMesa2.Text = "1";
             this.btnPessoaMesa2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa2.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa2.Visible = false;
             // 
             // btnPessoaMesa3
             // 
@@ -812,6 +859,7 @@
             this.btnPessoaMesa3.Text = "1";
             this.btnPessoaMesa3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa3.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa3.Visible = false;
             // 
             // btnPessoaMesa4
             // 
@@ -826,6 +874,7 @@
             this.btnPessoaMesa4.Text = "1";
             this.btnPessoaMesa4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa4.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa4.Visible = false;
             // 
             // btnPessoaMesa5
             // 
@@ -840,6 +889,7 @@
             this.btnPessoaMesa5.Text = "1";
             this.btnPessoaMesa5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa5.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa5.Visible = false;
             // 
             // btnPessoaMesa6
             // 
@@ -854,6 +904,7 @@
             this.btnPessoaMesa6.Text = "1";
             this.btnPessoaMesa6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa6.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa6.Visible = false;
             // 
             // btnPessoaMesa7
             // 
@@ -868,6 +919,7 @@
             this.btnPessoaMesa7.Text = "1";
             this.btnPessoaMesa7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa7.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa7.Visible = false;
             // 
             // btnPessoaMesa8
             // 
@@ -882,6 +934,7 @@
             this.btnPessoaMesa8.Text = "1";
             this.btnPessoaMesa8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa8.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa8.Visible = false;
             // 
             // btnPessoaMesa9
             // 
@@ -896,6 +949,7 @@
             this.btnPessoaMesa9.Text = "1";
             this.btnPessoaMesa9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa9.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa9.Visible = false;
             // 
             // btnPessoaMesa10
             // 
@@ -910,6 +964,7 @@
             this.btnPessoaMesa10.Text = "1";
             this.btnPessoaMesa10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa10.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa10.Visible = false;
             // 
             // btnPessoaMesa11
             // 
@@ -924,6 +979,7 @@
             this.btnPessoaMesa11.Text = "1";
             this.btnPessoaMesa11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa11.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa11.Visible = false;
             // 
             // btnPessoaMesa12
             // 
@@ -938,6 +994,7 @@
             this.btnPessoaMesa12.Text = "1";
             this.btnPessoaMesa12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa12.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa12.Visible = false;
             // 
             // btnPessoaMesa13
             // 
@@ -952,6 +1009,7 @@
             this.btnPessoaMesa13.Text = "1";
             this.btnPessoaMesa13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa13.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa13.Visible = false;
             // 
             // btnPessoaMesa14
             // 
@@ -966,6 +1024,7 @@
             this.btnPessoaMesa14.Text = "1";
             this.btnPessoaMesa14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa14.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa14.Visible = false;
             // 
             // btnPessoaMesa15
             // 
@@ -980,6 +1039,7 @@
             this.btnPessoaMesa15.Text = "1";
             this.btnPessoaMesa15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa15.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa15.Visible = false;
             // 
             // btnPessoaMesa16
             // 
@@ -994,6 +1054,7 @@
             this.btnPessoaMesa16.Text = "1";
             this.btnPessoaMesa16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa16.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa16.Visible = false;
             // 
             // btnPessoaMesa17
             // 
@@ -1008,6 +1069,7 @@
             this.btnPessoaMesa17.Text = "1";
             this.btnPessoaMesa17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa17.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa17.Visible = false;
             // 
             // btnPessoaMesa18
             // 
@@ -1022,6 +1084,7 @@
             this.btnPessoaMesa18.Text = "1";
             this.btnPessoaMesa18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa18.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa18.Visible = false;
             // 
             // btnPessoaMesa19
             // 
@@ -1036,6 +1099,7 @@
             this.btnPessoaMesa19.Text = "1";
             this.btnPessoaMesa19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa19.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa19.Visible = false;
             // 
             // btnPessoaMesa20
             // 
@@ -1050,6 +1114,7 @@
             this.btnPessoaMesa20.Text = "1";
             this.btnPessoaMesa20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa20.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa20.Visible = false;
             // 
             // btnPessoaMesa21
             // 
@@ -1064,6 +1129,7 @@
             this.btnPessoaMesa21.Text = "1";
             this.btnPessoaMesa21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa21.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa21.Visible = false;
             // 
             // btnPessoaMesa22
             // 
@@ -1078,6 +1144,7 @@
             this.btnPessoaMesa22.Text = "1";
             this.btnPessoaMesa22.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa22.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa22.Visible = false;
             // 
             // btnPessoaMesa23
             // 
@@ -1092,6 +1159,7 @@
             this.btnPessoaMesa23.Text = "1";
             this.btnPessoaMesa23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa23.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa23.Visible = false;
             // 
             // btnPessoaMesa24
             // 
@@ -1106,6 +1174,7 @@
             this.btnPessoaMesa24.Text = "1";
             this.btnPessoaMesa24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa24.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa24.Visible = false;
             // 
             // btnPessoaMesa25
             // 
@@ -1120,6 +1189,7 @@
             this.btnPessoaMesa25.Text = "1";
             this.btnPessoaMesa25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa25.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa25.Visible = false;
             // 
             // btnPessoaMesa26
             // 
@@ -1134,6 +1204,7 @@
             this.btnPessoaMesa26.Text = "1";
             this.btnPessoaMesa26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa26.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa26.Visible = false;
             // 
             // btnPessoaMesa27
             // 
@@ -1148,6 +1219,7 @@
             this.btnPessoaMesa27.Text = "1";
             this.btnPessoaMesa27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa27.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa27.Visible = false;
             // 
             // btnPessoaMesa28
             // 
@@ -1162,6 +1234,7 @@
             this.btnPessoaMesa28.Text = "1";
             this.btnPessoaMesa28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa28.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa28.Visible = false;
             // 
             // btnPessoaMesa29
             // 
@@ -1176,6 +1249,7 @@
             this.btnPessoaMesa29.Text = "1";
             this.btnPessoaMesa29.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa29.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa29.Visible = false;
             // 
             // btnPessoaMesa30
             // 
@@ -1190,6 +1264,7 @@
             this.btnPessoaMesa30.Text = "1";
             this.btnPessoaMesa30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa30.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa30.Visible = false;
             // 
             // btnPessoaMesa31
             // 
@@ -1204,6 +1279,7 @@
             this.btnPessoaMesa31.Text = "1";
             this.btnPessoaMesa31.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa31.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa31.Visible = false;
             // 
             // btnPessoaMesa32
             // 
@@ -1218,6 +1294,7 @@
             this.btnPessoaMesa32.Text = "1";
             this.btnPessoaMesa32.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa32.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa32.Visible = false;
             // 
             // btnPessoaMesa33
             // 
@@ -1232,6 +1309,7 @@
             this.btnPessoaMesa33.Text = "1";
             this.btnPessoaMesa33.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa33.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa33.Visible = false;
             // 
             // btnPessoaMesa34
             // 
@@ -1246,6 +1324,7 @@
             this.btnPessoaMesa34.Text = "1";
             this.btnPessoaMesa34.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa34.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa34.Visible = false;
             // 
             // btnPessoaMesa35
             // 
@@ -1260,6 +1339,7 @@
             this.btnPessoaMesa35.Text = "1";
             this.btnPessoaMesa35.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa35.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa35.Visible = false;
             // 
             // btnPessoaMesa36
             // 
@@ -1274,6 +1354,7 @@
             this.btnPessoaMesa36.Text = "1";
             this.btnPessoaMesa36.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa36.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa36.Visible = false;
             // 
             // btnPessoaMesa37
             // 
@@ -1288,6 +1369,7 @@
             this.btnPessoaMesa37.Text = "1";
             this.btnPessoaMesa37.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa37.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa37.Visible = false;
             // 
             // btnPessoaMesa38
             // 
@@ -1302,6 +1384,7 @@
             this.btnPessoaMesa38.Text = "1";
             this.btnPessoaMesa38.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa38.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa38.Visible = false;
             // 
             // btnPessoaMesa39
             // 
@@ -1316,6 +1399,7 @@
             this.btnPessoaMesa39.Text = "1";
             this.btnPessoaMesa39.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa39.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa39.Visible = false;
             // 
             // btnPessoaMesa40
             // 
@@ -1330,6 +1414,7 @@
             this.btnPessoaMesa40.Text = "1";
             this.btnPessoaMesa40.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa40.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa40.Visible = false;
             // 
             // btnPessoaMesa41
             // 
@@ -1344,6 +1429,7 @@
             this.btnPessoaMesa41.Text = "1";
             this.btnPessoaMesa41.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa41.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa41.Visible = false;
             // 
             // btnPessoaMesa42
             // 
@@ -1358,6 +1444,7 @@
             this.btnPessoaMesa42.Text = "1";
             this.btnPessoaMesa42.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa42.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa42.Visible = false;
             // 
             // btnPessoaMesa43
             // 
@@ -1372,6 +1459,7 @@
             this.btnPessoaMesa43.Text = "1";
             this.btnPessoaMesa43.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa43.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa43.Visible = false;
             // 
             // btnPessoaMesa44
             // 
@@ -1386,6 +1474,7 @@
             this.btnPessoaMesa44.Text = "1";
             this.btnPessoaMesa44.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPessoaMesa44.UseVisualStyleBackColor = false;
+            this.btnPessoaMesa44.Visible = false;
             // 
             // label5
             // 

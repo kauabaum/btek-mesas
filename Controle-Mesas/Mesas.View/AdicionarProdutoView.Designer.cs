@@ -29,18 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdicionarProdutoView));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.cmbProduto = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.mskNumeroPessoas = new System.Windows.Forms.MaskedTextBox();
+            this.mskQuantidade = new System.Windows.Forms.MaskedTextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnAdicionar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -56,20 +52,12 @@
             // 
             // cmbProduto
             // 
-            this.cmbProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProduto.FormattingEnabled = true;
-            this.cmbProduto.Location = new System.Drawing.Point(134, 118);
+            this.cmbProduto.Location = new System.Drawing.Point(114, 124);
             this.cmbProduto.Name = "cmbProduto";
-            this.cmbProduto.Size = new System.Drawing.Size(246, 39);
+            this.cmbProduto.Size = new System.Drawing.Size(277, 28);
             this.cmbProduto.TabIndex = 7;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 247);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(362, 148);
-            this.dataGridView1.TabIndex = 8;
             // 
             // label1
             // 
@@ -91,15 +79,15 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Quantidade :";
             // 
-            // mskNumeroPessoas
+            // mskQuantidade
             // 
-            this.mskNumeroPessoas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskNumeroPessoas.HideSelection = false;
-            this.mskNumeroPessoas.Location = new System.Drawing.Point(156, 181);
-            this.mskNumeroPessoas.Mask = "0000000";
-            this.mskNumeroPessoas.Name = "mskNumeroPessoas";
-            this.mskNumeroPessoas.Size = new System.Drawing.Size(99, 38);
-            this.mskNumeroPessoas.TabIndex = 21;
+            this.mskQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskQuantidade.HideSelection = false;
+            this.mskQuantidade.Location = new System.Drawing.Point(156, 186);
+            this.mskQuantidade.Mask = "0000000";
+            this.mskQuantidade.Name = "mskQuantidade";
+            this.mskQuantidade.Size = new System.Drawing.Size(85, 29);
+            this.mskQuantidade.TabIndex = 21;
             // 
             // button1
             // 
@@ -112,6 +100,7 @@
             this.button1.TabIndex = 13;
             this.toolTip1.SetToolTip(this.button1, "Sair");
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnSalvar
             // 
@@ -123,36 +112,23 @@
             this.btnSalvar.TabIndex = 12;
             this.toolTip1.SetToolTip(this.btnSalvar, "Salvar");
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
-            // btnAdicionar
-            // 
-            this.btnAdicionar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionar.Image = ((System.Drawing.Image)(resources.GetObject("btnAdicionar.Image")));
-            this.btnAdicionar.Location = new System.Drawing.Point(293, 174);
-            this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(67, 60);
-            this.btnAdicionar.TabIndex = 22;
-            this.btnAdicionar.Tag = "";
-            this.toolTip1.SetToolTip(this.btnAdicionar, "Adicionar");
-            this.btnAdicionar.UseVisualStyleBackColor = true;
-            // 
-            // AdicionarProdutoView
+            // frmAdicionarProdutoView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 407);
-            this.Controls.Add(this.btnAdicionar);
-            this.Controls.Add(this.mskNumeroPessoas);
+            this.ClientSize = new System.Drawing.Size(403, 255);
+            this.Controls.Add(this.mskQuantidade);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cmbProduto);
             this.Controls.Add(this.lblTitulo);
-            this.Name = "AdicionarProdutoView";
+            this.Name = "frmAdicionarProdutoView";
             this.Text = "AdicionarProduto";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.MesaView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,13 +138,11 @@
 
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.ComboBox cmbProduto;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.MaskedTextBox mskNumeroPessoas;
-        private System.Windows.Forms.Button btnAdicionar;
+        private System.Windows.Forms.MaskedTextBox mskQuantidade;
     }
 }

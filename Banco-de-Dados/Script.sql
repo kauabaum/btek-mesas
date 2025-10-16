@@ -61,14 +61,14 @@ VALUES
 (44, 'livre', 0);
 
 -- Tabela de produtos
-CREATE TABLE IF NOT EXISTS produtos (
+CREATE TABLE IF NOT EXISTS produto (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,  -- Nome do produto
     preco DECIMAL(10, 2) NOT NULL  -- Preço do produto
 );
 
 -- Exemplo de dados para a tabela de produtos
-INSERT INTO produtos (nome, preco) VALUES
+INSERT INTO produto (nome, preco) VALUES
 ('Hamburguer', 15.00),
 ('Batata Frita', 7.50),
 ('Refrigerante', 5.00),
@@ -76,11 +76,18 @@ INSERT INTO produtos (nome, preco) VALUES
 ('Suco Natural', 6.00);
 
 -- Criar uma tabela para pedidos (relacionada a mesas e produtos)
-CREATE TABLE IF NOT EXISTS pedidos (
+CREATE TABLE IF NOT EXISTS pedido (
     id INT AUTO_INCREMENT PRIMARY KEY,
     mesa_id INT,
     produto_id INT,
     quantidade INT DEFAULT 1,
     FOREIGN KEY (mesa_id) REFERENCES mesas(id),
-    FOREIGN KEY (produto_id) REFERENCES produtos(id)
+    FOREIGN KEY (produto_id) REFERENCES produto(id)
 );
+
+INSERT INTO pedido (mesa_id, produto_id, quantidade) VALUES
+('1', '2', 2),
+('2', '1', 5),
+('3', '4', 1),
+('4', '3', 3),
+('5', '5', 7);

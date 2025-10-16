@@ -102,6 +102,7 @@
             this.btnLimpar.TabIndex = 24;
             this.toolTip1.SetToolTip(this.btnLimpar, "Limpar");
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnPesquisar
             // 
@@ -113,6 +114,7 @@
             this.btnPesquisar.TabIndex = 23;
             this.toolTip1.SetToolTip(this.btnPesquisar, "Pesquisar");
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // btnExcluir
             // 
@@ -124,6 +126,7 @@
             this.btnExcluir.TabIndex = 22;
             this.toolTip1.SetToolTip(this.btnExcluir, "Excluir");
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
@@ -135,6 +138,7 @@
             this.btnSalvar.TabIndex = 21;
             this.toolTip1.SetToolTip(this.btnSalvar, "Salvar");
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnEditar
             // 
@@ -146,6 +150,7 @@
             this.btnEditar.TabIndex = 20;
             this.toolTip1.SetToolTip(this.btnEditar, "Editar");
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnLocalizar
             // 
@@ -157,6 +162,7 @@
             this.btnLocalizar.TabIndex = 19;
             this.toolTip1.SetToolTip(this.btnLocalizar, "Localizar");
             this.btnLocalizar.UseVisualStyleBackColor = true;
+            this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
             // 
             // btnAdicionar
             // 
@@ -169,6 +175,7 @@
             this.btnAdicionar.Tag = "";
             this.toolTip1.SetToolTip(this.btnAdicionar, "Adicionar");
             this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // btnMostrarTodos
             // 
@@ -180,6 +187,7 @@
             this.btnMostrarTodos.TabIndex = 17;
             this.toolTip1.SetToolTip(this.btnMostrarTodos, "Mostrar Todos");
             this.btnMostrarTodos.UseVisualStyleBackColor = true;
+            this.btnMostrarTodos.Click += new System.EventHandler(this.btnMostrarTodos_Click);
             // 
             // btnSair
             // 
@@ -191,8 +199,9 @@
             this.btnSair.TabIndex = 16;
             this.toolTip1.SetToolTip(this.btnSair, "Sair");
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // AdicionarProduto
+            // frmCriarProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -211,7 +220,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "AdicionarProduto";
+            this.Name = "frmCriarProduto";
             this.Text = "CriarProduto";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

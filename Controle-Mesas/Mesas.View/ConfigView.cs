@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Controle_Mesas
 {
+    // DESENVOLVER AINDA!!!
     public partial class frmConfig : Form
     {
         public frmConfig()

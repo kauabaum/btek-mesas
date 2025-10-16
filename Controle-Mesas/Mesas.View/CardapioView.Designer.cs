@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCardapio));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btPesquisar = new System.Windows.Forms.Button();
+            this.btnMostrarTodos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +62,7 @@
             // txtPesquisar
             // 
             this.txtPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisar.Location = new System.Drawing.Point(305, 21);
+            this.txtPesquisar.Location = new System.Drawing.Point(236, 21);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(207, 38);
             this.txtPesquisar.TabIndex = 16;
@@ -71,23 +73,37 @@
             this.btPesquisar.BackColor = System.Drawing.SystemColors.Control;
             this.btPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btPesquisar.Image = global::Controle_Mesas.Properties.Resources.pesquisa1;
-            this.btPesquisar.Location = new System.Drawing.Point(527, 12);
+            this.btPesquisar.Location = new System.Drawing.Point(449, 12);
             this.btPesquisar.Name = "btPesquisar";
             this.btPesquisar.Size = new System.Drawing.Size(65, 55);
             this.btPesquisar.TabIndex = 17;
             this.toolTip1.SetToolTip(this.btPesquisar, "Pesquisar Produto");
             this.btPesquisar.UseVisualStyleBackColor = false;
+            this.btPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
-            // Cardapio
+            // btnMostrarTodos
+            // 
+            this.btnMostrarTodos.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMostrarTodos.Image = ((System.Drawing.Image)(resources.GetObject("btnMostrarTodos.Image")));
+            this.btnMostrarTodos.Location = new System.Drawing.Point(529, 12);
+            this.btnMostrarTodos.Name = "btnMostrarTodos";
+            this.btnMostrarTodos.Size = new System.Drawing.Size(63, 55);
+            this.btnMostrarTodos.TabIndex = 18;
+            this.toolTip1.SetToolTip(this.btnMostrarTodos, "Mostrar Todos");
+            this.btnMostrarTodos.UseVisualStyleBackColor = true;
+            this.btnMostrarTodos.Click += new System.EventHandler(this.btnMostrarTodos_Click);
+            // 
+            // frmCardapio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 648);
+            this.Controls.Add(this.btnMostrarTodos);
             this.Controls.Add(this.btPesquisar);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblTitulo);
-            this.Name = "Cardapio";
+            this.Name = "frmCardapio";
             this.Text = "Cardapio";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -102,5 +118,6 @@
         private System.Windows.Forms.TextBox txtPesquisar;
         private System.Windows.Forms.Button btPesquisar;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button btnMostrarTodos;
     }
 }

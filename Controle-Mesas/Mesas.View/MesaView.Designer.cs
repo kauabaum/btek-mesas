@@ -38,12 +38,11 @@
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.mskNumeroPessoas = new System.Windows.Forms.MaskedTextBox();
             this.btnMostrarTodos = new System.Windows.Forms.Button();
             this.btPesquisar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
+            this.txtNumeroPessoas = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridPedidos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +56,7 @@
             this.btnFinalizarMesa.Text = "F7 - Finalizar Mesa";
             this.toolTip1.SetToolTip(this.btnFinalizarMesa, "Finalizar a Mesa");
             this.btnFinalizarMesa.UseVisualStyleBackColor = true;
+            this.btnFinalizarMesa.Click += new System.EventHandler(this.btnFinalizarMesa_Click);
             // 
             // lblTitulo
             // 
@@ -80,10 +80,10 @@
             // 
             // txtValor
             // 
-            this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValor.Location = new System.Drawing.Point(737, 392);
+            this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValor.Location = new System.Drawing.Point(730, 416);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(224, 62);
+            this.txtValor.Size = new System.Drawing.Size(231, 38);
             this.txtValor.TabIndex = 7;
             this.toolTip1.SetToolTip(this.txtValor, "Valor Final");
             // 
@@ -97,6 +97,7 @@
             this.btnAtualizarMesa.Text = "F5 - Atualizar Mesa";
             this.toolTip1.SetToolTip(this.btnAtualizarMesa, "Atualizar Pedidos na Mesa");
             this.btnAtualizarMesa.UseVisualStyleBackColor = true;
+            this.btnAtualizarMesa.Click += new System.EventHandler(this.CarregarMesa_Click);
             // 
             // btnAdicionarPedido
             // 
@@ -108,11 +109,12 @@
             this.btnAdicionarPedido.Text = "F3 - Adicionar Pedido";
             this.toolTip1.SetToolTip(this.btnAdicionarPedido, "Adicionar Pedido na Mesa");
             this.btnAdicionarPedido.UseVisualStyleBackColor = true;
+            this.btnAdicionarPedido.Click += new System.EventHandler(this.AdicionarProduto_Click);
             // 
             // txtPesquisar
             // 
             this.txtPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisar.Location = new System.Drawing.Point(524, 15);
+            this.txtPesquisar.Location = new System.Drawing.Point(537, 15);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(187, 38);
             this.txtPesquisar.TabIndex = 15;
@@ -129,28 +131,18 @@
             this.label1.Text = "№ de Pessoas :";
             this.toolTip1.SetToolTip(this.label1, "Mesa");
             // 
-            // mskNumeroPessoas
-            // 
-            this.mskNumeroPessoas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskNumeroPessoas.HideSelection = false;
-            this.mskNumeroPessoas.Location = new System.Drawing.Point(357, 15);
-            this.mskNumeroPessoas.Mask = "0000";
-            this.mskNumeroPessoas.Name = "mskNumeroPessoas";
-            this.mskNumeroPessoas.Size = new System.Drawing.Size(67, 38);
-            this.mskNumeroPessoas.TabIndex = 20;
-            this.toolTip1.SetToolTip(this.mskNumeroPessoas, "Numero");
-            // 
             // btnMostrarTodos
             // 
             this.btnMostrarTodos.BackColor = System.Drawing.SystemColors.Control;
             this.btnMostrarTodos.BackgroundImage = global::Controle_Mesas.Properties.Resources.setas1;
             this.btnMostrarTodos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMostrarTodos.Location = new System.Drawing.Point(767, 12);
+            this.btnMostrarTodos.Location = new System.Drawing.Point(817, 12);
             this.btnMostrarTodos.Name = "btnMostrarTodos";
             this.btnMostrarTodos.Size = new System.Drawing.Size(44, 43);
             this.btnMostrarTodos.TabIndex = 16;
             this.toolTip1.SetToolTip(this.btnMostrarTodos, "Mostrar tudo");
             this.btnMostrarTodos.UseVisualStyleBackColor = false;
+            this.btnMostrarTodos.Click += new System.EventHandler(this.btnMostrarTodos_Click);
             // 
             // btPesquisar
             // 
@@ -158,12 +150,13 @@
             this.btPesquisar.BackgroundImage = global::Controle_Mesas.Properties.Resources.pesquisa1;
             this.btPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btPesquisar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btPesquisar.Location = new System.Drawing.Point(717, 12);
+            this.btPesquisar.Location = new System.Drawing.Point(730, 12);
             this.btPesquisar.Name = "btPesquisar";
             this.btPesquisar.Size = new System.Drawing.Size(44, 43);
             this.btPesquisar.TabIndex = 13;
             this.toolTip1.SetToolTip(this.btPesquisar, "Pesquisar");
             this.btPesquisar.UseVisualStyleBackColor = false;
+            this.btPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // btnExcluir
             // 
@@ -175,36 +168,37 @@
             this.btnExcluir.TabIndex = 10;
             this.toolTip1.SetToolTip(this.btnExcluir, "Excluir");
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.SystemColors.Control;
             this.btnSalvar.BackgroundImage = global::Controle_Mesas.Properties.Resources.confirmar1;
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSalvar.Location = new System.Drawing.Point(817, 12);
+            this.btnSalvar.Location = new System.Drawing.Point(867, 12);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(44, 43);
             this.btnSalvar.TabIndex = 9;
             this.toolTip1.SetToolTip(this.btnSalvar, "Salvar");
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvarAlteracoes_Click);
             // 
-            // btnEditar
+            // txtNumeroPessoas
             // 
-            this.btnEditar.BackgroundImage = global::Controle_Mesas.Properties.Resources.pena1;
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditar.Location = new System.Drawing.Point(867, 12);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(44, 43);
-            this.btnEditar.TabIndex = 8;
-            this.toolTip1.SetToolTip(this.btnEditar, "Editar");
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.txtNumeroPessoas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroPessoas.Location = new System.Drawing.Point(357, 15);
+            this.txtNumeroPessoas.Name = "txtNumeroPessoas";
+            this.txtNumeroPessoas.Size = new System.Drawing.Size(121, 38);
+            this.txtNumeroPessoas.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.txtNumeroPessoas, "Numero de Pessoas");
+            this.txtNumeroPessoas.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtQuantidadePessoas_KeyDown);
             // 
-            // MesaView
+            // frmMesaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 466);
-            this.Controls.Add(this.mskNumeroPessoas);
+            this.Controls.Add(this.txtNumeroPessoas);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMostrarTodos);
             this.Controls.Add(this.txtPesquisar);
@@ -213,13 +207,13 @@
             this.Controls.Add(this.btnAtualizarMesa);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.gridPedidos);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnFinalizarMesa);
-            this.Name = "MesaView";
+            this.Name = "frmMesaView";
             this.Text = "Mesa";
+            this.Load += new System.EventHandler(this.MesaView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridPedidos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -231,7 +225,6 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.DataGridView gridPedidos;
         private System.Windows.Forms.TextBox txtValor;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnAtualizarMesa;
@@ -241,6 +234,6 @@
         private System.Windows.Forms.Button btnMostrarTodos;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox mskNumeroPessoas;
+        private System.Windows.Forms.TextBox txtNumeroPessoas;
     }
 }
