@@ -46,42 +46,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdicionarMesasView.cs">
+    <Compile Include="Mesas.View\CardapioView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdicionarMesasView.Designer.cs">
-      <DependentUpon>AdicionarMesasView.cs</DependentUpon>
+    <Compile Include="Mesas.View\CardapioView.Designer.cs">
+      <DependentUpon>CardapioView.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdicionarProdutosView.cs">
+    <Compile Include="Mesas.View\ConfigView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdicionarProdutosView.Designer.cs">
-      <DependentUpon>AdicionarProdutosView.cs</DependentUpon>
+    <Compile Include="Mesas.View\ConfigView.Designer.cs">
+      <DependentUpon>ConfigView.cs</DependentUpon>
     </Compile>
-    <Compile Include="FinanceiroView.cs">
+    <Compile Include="Mesas.View\CriarProdutoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FinanceiroView.Designer.cs">
-      <DependentUpon>FinanceiroView.cs</DependentUpon>
+    <Compile Include="Mesas.View\CriarProdutoView.Designer.cs">
+      <DependentUpon>CriarProdutoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrincipalView.cs">
+    <Compile Include="Mesas.View\AdicionarProdutoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PrincipalView.Designer.cs">
+    <Compile Include="Mesas.View\AdicionarProdutoView.Designer.cs">
+      <DependentUpon>AdicionarProdutoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesas.View\MesaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesas.View\MesaView.Designer.cs">
+      <DependentUpon>MesaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesas.View\PrincipalView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesas.View\PrincipalView.Designer.cs">
       <DependentUpon>PrincipalView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdicionarMesasView.resx">
-      <DependentUpon>AdicionarMesasView.cs</DependentUpon>
+    <EmbeddedResource Include="Mesas.View\CardapioView.resx">
+      <DependentUpon>CardapioView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdicionarProdutosView.resx">
-      <DependentUpon>AdicionarProdutosView.cs</DependentUpon>
+    <EmbeddedResource Include="Mesas.View\ConfigView.resx">
+      <DependentUpon>ConfigView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FinanceiroView.resx">
-      <DependentUpon>FinanceiroView.cs</DependentUpon>
+    <EmbeddedResource Include="Mesas.View\CriarProdutoView.resx">
+      <DependentUpon>CriarProdutoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalView.resx">
+    <EmbeddedResource Include="Mesas.View\AdicionarProdutoView.resx">
+      <DependentUpon>AdicionarProdutoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesas.View\MesaView.resx">
+      <DependentUpon>MesaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesas.View\PrincipalView.resx">
       <DependentUpon>PrincipalView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -125,5 +143,24 @@
   <ItemGroup>
     <None Include="Resources\cardapio.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirmar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lixo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pena1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesquisa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setas1.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

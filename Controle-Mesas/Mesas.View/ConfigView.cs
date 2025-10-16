@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Controle_Mesas
 {
-    public partial class PrincipalView : Form
+    public partial class frmConfig : Form
     {
-        public PrincipalView()
+        public frmConfig()
         {
             InitializeComponent();
         }

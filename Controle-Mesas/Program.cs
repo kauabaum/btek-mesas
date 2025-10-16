@@ -16,7 +16,7 @@ namespace Controle_Mesas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PrincipalView());
+            Application.Run(new frmPrincipalView());
         }
     }
 }

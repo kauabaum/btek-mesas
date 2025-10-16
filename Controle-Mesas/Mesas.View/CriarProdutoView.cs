@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Controle_Mesas
 {
-    public partial class FinanceiroView : Form
+    public partial class frmCriarProduto : Form
     {
-        public FinanceiroView()
+        public frmCriarProduto()
         {
             InitializeComponent();
         }

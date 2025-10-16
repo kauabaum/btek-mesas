@@ -1,6 +1,6 @@
 ﻿namespace Controle_Mesas
 {
-    partial class PrincipalView
+    partial class frmPrincipalView
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -73,7 +73,7 @@
             this.btnMesa42 = new System.Windows.Forms.Button();
             this.btnMesa43 = new System.Windows.Forms.Button();
             this.btnMesa44 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
+            this.btnFinalizarMesa = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -130,9 +130,10 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCriarProdutos = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -713,19 +714,19 @@
             this.btnMesa44.Text = "44";
             this.btnMesa44.UseVisualStyleBackColor = false;
             // 
-            // button47
+            // btnFinalizarMesa
             // 
-            this.button47.BackColor = System.Drawing.SystemColors.Control;
-            this.button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button47.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button47.Location = new System.Drawing.Point(764, 21);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(146, 59);
-            this.button47.TabIndex = 49;
-            this.button47.Text = "F5 - Atualizar Mesas";
-            this.toolTip1.SetToolTip(this.button47, "Atualizar Mesas");
-            this.button47.UseVisualStyleBackColor = false;
+            this.btnFinalizarMesa.BackColor = System.Drawing.SystemColors.Control;
+            this.btnFinalizarMesa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFinalizarMesa.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnFinalizarMesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinalizarMesa.Location = new System.Drawing.Point(764, 21);
+            this.btnFinalizarMesa.Name = "btnFinalizarMesa";
+            this.btnFinalizarMesa.Size = new System.Drawing.Size(146, 59);
+            this.btnFinalizarMesa.TabIndex = 49;
+            this.btnFinalizarMesa.Text = "F5 - Atualizar Mesas";
+            this.toolTip1.SetToolTip(this.btnFinalizarMesa, "Atualizar Mesas");
+            this.btnFinalizarMesa.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -1409,6 +1410,7 @@
             this.btnCardapio.TabIndex = 105;
             this.toolTip1.SetToolTip(this.btnCardapio, "Cardapio");
             this.btnCardapio.UseVisualStyleBackColor = false;
+            this.btnCardapio.Click += new System.EventHandler(this.Cardapio_Click);
             // 
             // pictureBox6
             // 
@@ -1453,36 +1455,40 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 538);
+            this.pictureBox2.Location = new System.Drawing.Point(-3, 538);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1122, 117);
+            this.pictureBox2.Size = new System.Drawing.Size(1132, 128);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox2, "Legenda");
             // 
+            // btnCriarProdutos
+            // 
+            this.btnCriarProdutos.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCriarProdutos.BackgroundImage = global::Controle_Mesas.Properties.Resources.produtos;
+            this.btnCriarProdutos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCriarProdutos.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCriarProdutos.Location = new System.Drawing.Point(1028, 12);
+            this.btnCriarProdutos.Name = "btnCriarProdutos";
+            this.btnCriarProdutos.Size = new System.Drawing.Size(85, 80);
+            this.btnCriarProdutos.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.btnCriarProdutos, "Adicionar Produtos");
+            this.btnCriarProdutos.UseVisualStyleBackColor = false;
+            this.btnCriarProdutos.Click += new System.EventHandler(this.CriarProduto_Click);
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.BackgroundImage = global::Controle_Mesas.Properties.Resources.produtos;
+            this.button1.BackgroundImage = global::Controle_Mesas.Properties.Resources.config;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.Location = new System.Drawing.Point(1028, 12);
+            this.button1.Location = new System.Drawing.Point(1049, 590);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 80);
-            this.button1.TabIndex = 2;
+            this.button1.Size = new System.Drawing.Size(64, 60);
+            this.button1.TabIndex = 107;
             this.toolTip1.SetToolTip(this.button1, "Adicionar Produtos");
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.BackgroundImage = global::Controle_Mesas.Properties.Resources._318217790_104693535824908_3461106099253519531_n;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(12, -7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 124);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.button1.Click += new System.EventHandler(this.Config_Click);
             // 
             // label6
             // 
@@ -1495,12 +1501,24 @@
             this.label6.TabIndex = 106;
             this.label6.Text = "Mesas :";
             // 
-            // PrincipalView
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.BackgroundImage = global::Controle_Mesas.Properties.Resources._318217790_104693535824908_3461106099253519531_n;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(12, -7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 124);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // frmPrincipalView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1124, 654);
+            this.ClientSize = new System.Drawing.Size(1124, 661);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCardapio);
             this.Controls.Add(this.label5);
@@ -1556,7 +1574,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.button47);
+            this.Controls.Add(this.btnFinalizarMesa);
             this.Controls.Add(this.btnMesa44);
             this.Controls.Add(this.btnMesa43);
             this.Controls.Add(this.btnMesa42);
@@ -1602,9 +1620,9 @@
             this.Controls.Add(this.btnMesa2);
             this.Controls.Add(this.btnMesa1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCriarProdutos);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "PrincipalView";
+            this.Name = "frmPrincipalView";
             this.Text = "Pesqueiro Senia";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -1619,7 +1637,6 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnMesa1;
         private System.Windows.Forms.Button btnMesa2;
@@ -1665,7 +1682,7 @@
         private System.Windows.Forms.Button btnMesa42;
         private System.Windows.Forms.Button btnMesa43;
         private System.Windows.Forms.Button btnMesa44;
-        private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.Button btnFinalizarMesa;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -1722,6 +1739,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnCardapio;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnCriarProdutos;
+        private System.Windows.Forms.Button button1;
     }
 }
 
