@@ -12,6 +12,15 @@ Permite gerenciar **status das mesas (livre, ocupada, desativada), pedidos, quan
 
 ---
 
+
+## 📝 Desenvolvimento sob demanda
+
+Este projeto foi **desenvolvido especificamente a pedido do Pesqueiro Senia**, visando **resolver problemas reais de gerenciamento do salão e dos pedidos**.  
+Antes do sistema, o controle de mesas, quantidade de clientes e pedidos era feito manualmente, gerando **erros e perda de eficiência**.  
+Com esta aplicação, o Pesqueiro Senia passou a ter **um gerenciamento centralizado, visual e confiável**, otimizando o atendimento e evitando falhas humanas.
+
+---
+
 ## ✨ Funcionalidades Principais
 
 ### 🍽️ **Mesas**
