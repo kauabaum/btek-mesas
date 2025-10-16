@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMesaView));
             this.btnFinalizarMesa = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gridPedidos = new System.Windows.Forms.DataGridView();
@@ -80,10 +81,12 @@
             // 
             // txtValor
             // 
-            this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValor.Location = new System.Drawing.Point(730, 416);
+            this.txtValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.txtValor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValor.Location = new System.Drawing.Point(713, 421);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(231, 38);
+            this.txtValor.Size = new System.Drawing.Size(248, 33);
             this.txtValor.TabIndex = 7;
             this.toolTip1.SetToolTip(this.txtValor, "Valor Final");
             // 
@@ -133,9 +136,12 @@
             // 
             // btnMostrarTodos
             // 
-            this.btnMostrarTodos.BackColor = System.Drawing.SystemColors.Control;
-            this.btnMostrarTodos.BackgroundImage = global::Controle_Mesas.Properties.Resources.setas1;
+            this.btnMostrarTodos.BackColor = System.Drawing.Color.Transparent;
+            this.btnMostrarTodos.BackgroundImage = global::Controle_Mesas.Properties.Resources.mostratudo;
             this.btnMostrarTodos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMostrarTodos.FlatAppearance.BorderSize = 0;
+            this.btnMostrarTodos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnMostrarTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarTodos.Location = new System.Drawing.Point(817, 12);
             this.btnMostrarTodos.Name = "btnMostrarTodos";
             this.btnMostrarTodos.Size = new System.Drawing.Size(44, 43);
@@ -146,9 +152,12 @@
             // 
             // btPesquisar
             // 
-            this.btPesquisar.BackColor = System.Drawing.SystemColors.Control;
-            this.btPesquisar.BackgroundImage = global::Controle_Mesas.Properties.Resources.pesquisa1;
+            this.btPesquisar.BackColor = System.Drawing.Color.Transparent;
+            this.btPesquisar.BackgroundImage = global::Controle_Mesas.Properties.Resources.pesquisar2;
             this.btPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btPesquisar.FlatAppearance.BorderSize = 0;
+            this.btPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btPesquisar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btPesquisar.Location = new System.Drawing.Point(730, 12);
             this.btPesquisar.Name = "btPesquisar";
@@ -160,8 +169,11 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.BackgroundImage = global::Controle_Mesas.Properties.Resources.lixo1;
+            this.btnExcluir.BackgroundImage = global::Controle_Mesas.Properties.Resources.remover;
             this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExcluir.FlatAppearance.BorderSize = 0;
+            this.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Location = new System.Drawing.Point(917, 12);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(44, 43);
@@ -172,9 +184,12 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSalvar.BackgroundImage = global::Controle_Mesas.Properties.Resources.confirmar1;
+            this.btnSalvar.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalvar.BackgroundImage = global::Controle_Mesas.Properties.Resources.confirmarnovo;
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSalvar.FlatAppearance.BorderSize = 0;
+            this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Location = new System.Drawing.Point(867, 12);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(44, 43);
@@ -197,6 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(973, 466);
             this.Controls.Add(this.txtNumeroPessoas);
             this.Controls.Add(this.label1);
@@ -211,9 +227,13 @@
             this.Controls.Add(this.gridPedidos);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnFinalizarMesa);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "frmMesaView";
             this.Text = "Mesa";
             this.Load += new System.EventHandler(this.MesaView_Load);
+            this.Click += new System.EventHandler(this.MesaView_Click);
             ((System.ComponentModel.ISupportInitialize)(this.gridPedidos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

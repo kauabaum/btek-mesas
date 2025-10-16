@@ -23,9 +23,9 @@ namespace Controle_Mesas
         }
         private void MesaView_Load(object sender, EventArgs e)
         {
-            this.Text = $"Mesa {mesaId:D2}";
+            this.Text = $"Novo Pedido Mesa {mesaId:D2}";
 
-            lblTitulo.Text = $"Mesa {mesaId:D2}";
+            lblTitulo.Text = $"Pedido Mesa {mesaId:D2}";
             MesasProdutosDAO mesasProdutosDAO = new MesasProdutosDAO();
 
         }

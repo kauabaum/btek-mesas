@@ -28,6 +28,8 @@ namespace Controle_Mesas
             {
                 DataTable dataTable = produtoDAO.GetAll();
                 dataGridView1.DataSource = dataTable;
+                dataGridView1.Columns["Id_Produto"].Visible = false;
+                dataGridView1.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
             }
             catch (Exception ex)

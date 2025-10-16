@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,9 @@ namespace Controle_Mesas
 {
     public partial class frmMesaView : Form
     {
+        private Dictionary<Control, Rectangle> controlesOriginais = new Dictionary<Control, Rectangle>();
+        private Dictionary<Control, float> fontesOriginais = new Dictionary<Control, float>();
+        private Size formOriginalSize;
         private readonly int mesaId;
         private MesasProdutosDAO mesaDAO;
         private ProdutoDAO produtoDAO;
@@ -27,7 +31,33 @@ namespace Controle_Mesas
             produtoDAO = new ProdutoDAO();
             CarregarDados();
             ConfigurarGrid();
+            this.KeyPreview = true;
+
+            // Associa o evento KeyDown
+            this.KeyDown += MesaView_KeyDown;
+
         }
+        private void MesaView_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F5)
+            {
+                // Exemplo: abrir tela de mesas
+                CarregarTudo();
+            }
+            else if (e.KeyCode == Keys.F3)
+            {
+                // Exemplo: abrir tela de pedidos
+                frmAdicionarProdutoView add = new frmAdicionarProdutoView(mesaId);
+                add.ShowDialog();
+            }
+            else if (e.KeyCode == Keys.F7)
+            {
+                // Exemplo: abrir tela de relatórios
+                btnFinalizarMesa_Click(btnFinalizarMesa, EventArgs.Empty);
+            }
+            // e assim por diante para outras teclas
+        }
+
         private void MesaView_Load(object sender, EventArgs e)
         {
             this.Text = $"Mesa {mesaId:D2}";
@@ -45,8 +75,72 @@ namespace Controle_Mesas
             txtValor.SelectionStart = txtValor.Text.Length;
             this.ActiveControl = null; // tira o foco do textbox
             AtualizarValorTotal();
+            formOriginalSize = this.ClientSize;
+
+            // Salva tamanho e posição originais dos controles
+            SalvarControlesOriginais(this);
+
+            // Associa o evento de resize
+            this.Resize += Form1_Resize;
+        }
+        private void MesaView_Click(object sender, EventArgs e)
+        {
+            AtualizarValorTotal();
+            CarregarDados();
 
         }
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            float scaleX = (float)this.ClientSize.Width / formOriginalSize.Width;
+            float scaleY = (float)this.ClientSize.Height / formOriginalSize.Height;
+
+            foreach (var kvp in controlesOriginais)
+            {
+                Control c = kvp.Key;
+                Rectangle r = kvp.Value;
+
+
+                // Redimensiona outros controles
+                c.Width = (int)(r.Width * scaleX);
+                c.Height = (int)(r.Height * scaleY);
+                c.Left = (int)(r.Left * scaleX);
+                c.Top = (int)(r.Top * scaleY);
+
+                // Ajusta a fonte proporcionalmente usando o tamanho original
+                if (fontesOriginais.ContainsKey(c))
+                {
+                    float originalFont = fontesOriginais[c];
+                    float newFontSize = originalFont * Math.Min(scaleX, scaleY);
+                    c.Font = new Font(c.Font.FontFamily, newFontSize, c.Font.Style);
+                }
+
+                // Botões redondos
+                if (c is Button && c.Name.StartsWith("btnPessoaMesa"))
+                {
+                    int size = Math.Min(c.Width, c.Height);
+                    GraphicsPath path = new GraphicsPath();
+                    path.AddEllipse(0, 0, size, size);
+                    c.Region = new Region(path);
+                }
+
+            }
+        }
+
+
+
+        private void SalvarControlesOriginais(Control parent)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                controlesOriginais[c] = c.Bounds;
+                fontesOriginais[c] = c.Font.Size; // salva tamanho da fonte original
+
+                if (c.HasChildren)
+                    SalvarControlesOriginais(c); // recursivo
+            }
+        }
+
+
         private PedidoDAO pedidoDAO = new PedidoDAO();
         private void CarregarDados()
         {
@@ -59,6 +153,7 @@ namespace Controle_Mesas
                 gridPedidos.Columns["Id_Produto"].Visible = false;
                 gridPedidos.Columns["Id_Pedido"].Visible = false;
                 gridPedidos.Columns["Id_Mesa"].Visible = false;
+                gridPedidos.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
                 // busca quantidade de pessoas e preenche
                 int pessoas = mesaDAO.ObterQtdPessoasMesa(mesaId);
@@ -98,10 +193,16 @@ namespace Controle_Mesas
                 MessageBox.Show("Pessoas Atualizadas!");
             }
         }
+        private void CarregarTudo()
+        {
+            AtualizarValorTotal();
+            CarregarDados();
+        }
         private void AtualizarValorTotal()
         {
             decimal total = pedidoDAO.ObterTotalMesa(mesaId);
             txtValor.Text = $"Total: R$ {total:N2}";
+            txtValor.BackColor = Color.FromArgb(223, 223, 223);
         }
         private void btnFinalizarMesa_Click(object sender, EventArgs e)
         {
@@ -137,6 +238,7 @@ namespace Controle_Mesas
         private void CarregarMesa_Click(object sender, EventArgs e)
         {
             CarregarDados();
+            AtualizarValorTotal();
         }
         private void AdicionarProduto_Click(object sender, EventArgs e)
         {
@@ -155,6 +257,15 @@ namespace Controle_Mesas
                 if (col.Name != "Quantidade")
                     col.ReadOnly = true;
             }
+            gridPedidos.CellToolTipTextNeeded += (s, e) =>
+            {
+                if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+                {
+                    string valor = gridPedidos[e.ColumnIndex, e.RowIndex].Value?.ToString();
+                    e.ToolTipText = valor;
+                }
+            };
+
         }
         private void gridPedidos_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
