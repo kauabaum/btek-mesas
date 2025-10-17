@@ -113,6 +113,16 @@ namespace Controle_Mesas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carrinhoVermelho2 {
+            get {
+                object obj = ResourceManager.GetObject("carrinhoVermelho2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap config {
             get {
                 object obj = ResourceManager.GetObject("config", resourceCulture);
@@ -163,6 +173,16 @@ namespace Controle_Mesas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap editarcinza {
+            get {
+                object obj = ResourceManager.GetObject("editarcinza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edtar {
             get {
                 object obj = ResourceManager.GetObject("edtar", resourceCulture);
@@ -186,6 +206,16 @@ namespace Controle_Mesas.Properties {
         internal static System.Drawing.Bitmap mesa_circular {
             get {
                 object obj = ResourceManager.GetObject("mesa-circular", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mostrarcinza {
+            get {
+                object obj = ResourceManager.GetObject("mostrarcinza", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,6 +273,16 @@ namespace Controle_Mesas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pesquisarcinza {
+            get {
+                object obj = ResourceManager.GetObject("pesquisarcinza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap produtos {
             get {
                 object obj = ResourceManager.GetObject("produtos", resourceCulture);
@@ -286,6 +326,16 @@ namespace Controle_Mesas.Properties {
         internal static System.Drawing.Bitmap selecionar {
             get {
                 object obj = ResourceManager.GetObject("selecionar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap selecionarcinz {
+            get {
+                object obj = ResourceManager.GetObject("selecionarcinz", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

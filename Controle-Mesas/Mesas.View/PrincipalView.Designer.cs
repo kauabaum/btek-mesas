@@ -127,6 +127,9 @@ namespace Controle_Mesas
             this.btnPessoaMesa44 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblDataHora = new System.Windows.Forms.Label();
             this.btnConfig = new System.Windows.Forms.Button();
             this.btnCardapio = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -135,10 +138,7 @@ namespace Controle_Mesas
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnCriarProdutos = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblDataHora = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -1624,6 +1624,37 @@ namespace Controle_Mesas
             this.label5.TabIndex = 104;
             this.label5.Text = "Mesa Desativada";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(8, 105);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 24);
+            this.label6.TabIndex = 106;
+            this.label6.Text = "Mesas:";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(960, 24);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(146, 45);
+            this.lblHora.TabIndex = 108;
+            this.lblHora.Text = "00:00:00";
+            // 
+            // lblDataHora
+            // 
+            this.lblDataHora.AutoSize = true;
+            this.lblDataHora.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataHora.Location = new System.Drawing.Point(974, 69);
+            this.lblDataHora.Name = "lblDataHora";
+            this.lblDataHora.Size = new System.Drawing.Size(108, 25);
+            this.lblDataHora.TabIndex = 109;
+            this.lblDataHora.Text = "00/00/0000";
+            // 
             // btnConfig
             // 
             this.btnConfig.BackColor = System.Drawing.Color.Silver;
@@ -1718,53 +1749,22 @@ namespace Controle_Mesas
             this.btnCriarProdutos.UseVisualStyleBackColor = false;
             this.btnCriarProdutos.Click += new System.EventHandler(this.CriarProduto_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(8, 105);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 24);
-            this.label6.TabIndex = 106;
-            this.label6.Text = "Mesas:";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Controle_Mesas.Properties.Resources.Btek_Deitado_Medio;
+            this.pictureBox1.BackgroundImage = global::Controle_Mesas.Properties.Resources.carrinhoVermelho2;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-119, -67);
+            this.pictureBox1.Location = new System.Drawing.Point(-32, -20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(468, 241);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 137);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(960, 24);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(146, 45);
-            this.lblHora.TabIndex = 108;
-            this.lblHora.Text = "00:00:00";
-            // 
-            // lblDataHora
-            // 
-            this.lblDataHora.AutoSize = true;
-            this.lblDataHora.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataHora.Location = new System.Drawing.Point(974, 69);
-            this.lblDataHora.Name = "lblDataHora";
-            this.lblDataHora.Size = new System.Drawing.Size(108, 25);
-            this.lblDataHora.TabIndex = 109;
-            this.lblDataHora.Text = "00/00/0000";
             // 
             // frmPrincipalView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(1124, 661);
             this.Controls.Add(this.lblDataHora);
             this.Controls.Add(this.lblHora);

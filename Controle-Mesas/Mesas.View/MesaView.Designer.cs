@@ -39,11 +39,11 @@
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.txtNumeroPessoas = new System.Windows.Forms.TextBox();
             this.btnMostrarTodos = new System.Windows.Forms.Button();
             this.btPesquisar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.txtNumeroPessoas = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridPedidos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +81,7 @@
             // 
             // txtValor
             // 
-            this.txtValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.txtValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(247)))));
             this.txtValor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValor.Location = new System.Drawing.Point(713, 421);
@@ -134,14 +134,23 @@
             this.label1.Text = "№ de Pessoas :";
             this.toolTip1.SetToolTip(this.label1, "Mesa");
             // 
+            // txtNumeroPessoas
+            // 
+            this.txtNumeroPessoas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroPessoas.Location = new System.Drawing.Point(357, 15);
+            this.txtNumeroPessoas.Name = "txtNumeroPessoas";
+            this.txtNumeroPessoas.Size = new System.Drawing.Size(121, 38);
+            this.txtNumeroPessoas.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.txtNumeroPessoas, "Numero de Pessoas");
+            this.txtNumeroPessoas.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtQuantidadePessoas_KeyDown);
+            // 
             // btnMostrarTodos
             // 
             this.btnMostrarTodos.BackColor = System.Drawing.Color.Transparent;
-            this.btnMostrarTodos.BackgroundImage = global::Controle_Mesas.Properties.Resources.mostratudo;
+            this.btnMostrarTodos.BackgroundImage = global::Controle_Mesas.Properties.Resources.mostrarcinza;
             this.btnMostrarTodos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMostrarTodos.FlatAppearance.BorderSize = 0;
             this.btnMostrarTodos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnMostrarTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarTodos.Location = new System.Drawing.Point(817, 12);
             this.btnMostrarTodos.Name = "btnMostrarTodos";
             this.btnMostrarTodos.Size = new System.Drawing.Size(44, 43);
@@ -153,11 +162,10 @@
             // btPesquisar
             // 
             this.btPesquisar.BackColor = System.Drawing.Color.Transparent;
-            this.btPesquisar.BackgroundImage = global::Controle_Mesas.Properties.Resources.pesquisar2;
+            this.btPesquisar.BackgroundImage = global::Controle_Mesas.Properties.Resources.pesquisarcinza;
             this.btPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btPesquisar.FlatAppearance.BorderSize = 0;
             this.btPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btPesquisar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btPesquisar.Location = new System.Drawing.Point(730, 12);
             this.btPesquisar.Name = "btPesquisar";
@@ -173,7 +181,6 @@
             this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExcluir.FlatAppearance.BorderSize = 0;
             this.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Location = new System.Drawing.Point(917, 12);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(44, 43);
@@ -189,7 +196,6 @@
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSalvar.FlatAppearance.BorderSize = 0;
             this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Location = new System.Drawing.Point(867, 12);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(44, 43);
@@ -198,21 +204,11 @@
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvarAlteracoes_Click);
             // 
-            // txtNumeroPessoas
-            // 
-            this.txtNumeroPessoas.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroPessoas.Location = new System.Drawing.Point(357, 15);
-            this.txtNumeroPessoas.Name = "txtNumeroPessoas";
-            this.txtNumeroPessoas.Size = new System.Drawing.Size(121, 38);
-            this.txtNumeroPessoas.TabIndex = 20;
-            this.toolTip1.SetToolTip(this.txtNumeroPessoas, "Numero de Pessoas");
-            this.txtNumeroPessoas.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtQuantidadePessoas_KeyDown);
-            // 
             // frmMesaView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(973, 466);
             this.Controls.Add(this.txtNumeroPessoas);
             this.Controls.Add(this.label1);

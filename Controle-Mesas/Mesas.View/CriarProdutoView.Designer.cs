@@ -36,8 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btnExcluir = new System.Windows.Forms.Button();
             this.btnPesquisar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnAdicionar = new System.Windows.Forms.Button();
@@ -89,31 +89,13 @@
             this.txtNome.Size = new System.Drawing.Size(366, 38);
             this.txtNome.TabIndex = 14;
             // 
-            // btnExcluir
-            // 
-            this.btnExcluir.BackColor = System.Drawing.Color.Transparent;
-            this.btnExcluir.BackgroundImage = global::Controle_Mesas.Properties.Resources.remover;
-            this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExcluir.FlatAppearance.BorderSize = 0;
-            this.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(368, 12);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(83, 78);
-            this.btnExcluir.TabIndex = 22;
-            this.toolTip1.SetToolTip(this.btnExcluir, "Excluir");
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
             // btnPesquisar
             // 
             this.btnPesquisar.BackColor = System.Drawing.Color.Transparent;
-            this.btnPesquisar.BackgroundImage = global::Controle_Mesas.Properties.Resources.pesquisar2;
+            this.btnPesquisar.BackgroundImage = global::Controle_Mesas.Properties.Resources.pesquisarcinza;
             this.btnPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPesquisar.FlatAppearance.BorderSize = 0;
             this.btnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.Location = new System.Drawing.Point(101, 12);
             this.btnPesquisar.Name = "btnPesquisar";
@@ -123,13 +105,28 @@
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcluir.BackgroundImage = global::Controle_Mesas.Properties.Resources.remover;
+            this.btnExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExcluir.FlatAppearance.BorderSize = 0;
+            this.btnExcluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnExcluir.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(368, 12);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(83, 78);
+            this.btnExcluir.TabIndex = 22;
+            this.toolTip1.SetToolTip(this.btnExcluir, "Excluir");
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // btnSalvar
             // 
             this.btnSalvar.BackgroundImage = global::Controle_Mesas.Properties.Resources.confirmarnovo;
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSalvar.FlatAppearance.BorderSize = 0;
             this.btnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Location = new System.Drawing.Point(279, 12);
             this.btnSalvar.Name = "btnSalvar";
@@ -141,11 +138,10 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.BackgroundImage = global::Controle_Mesas.Properties.Resources.edtar;
+            this.btnEditar.BackgroundImage = global::Controle_Mesas.Properties.Resources.editarcinza;
             this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEditar.FlatAppearance.BorderSize = 0;
             this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(190, 12);
             this.btnEditar.Name = "btnEditar";
@@ -158,11 +154,10 @@
             // btnAdicionar
             // 
             this.btnAdicionar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdicionar.BackgroundImage = global::Controle_Mesas.Properties.Resources.selecionar;
+            this.btnAdicionar.BackgroundImage = global::Controle_Mesas.Properties.Resources.selecionarcinz;
             this.btnAdicionar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdicionar.FlatAppearance.BorderSize = 0;
             this.btnAdicionar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdicionar.Location = new System.Drawing.Point(12, 12);
             this.btnAdicionar.Name = "btnAdicionar";
@@ -176,11 +171,10 @@
             // btnMostrarTodos
             // 
             this.btnMostrarTodos.BackColor = System.Drawing.Color.Transparent;
-            this.btnMostrarTodos.BackgroundImage = global::Controle_Mesas.Properties.Resources.mostratudo;
+            this.btnMostrarTodos.BackgroundImage = global::Controle_Mesas.Properties.Resources.mostrarcinza;
             this.btnMostrarTodos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMostrarTodos.FlatAppearance.BorderSize = 0;
             this.btnMostrarTodos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnMostrarTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarTodos.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrarTodos.Location = new System.Drawing.Point(457, 12);
             this.btnMostrarTodos.Name = "btnMostrarTodos";
@@ -194,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(551, 445);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.btnExcluir);

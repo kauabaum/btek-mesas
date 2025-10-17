@@ -7,7 +7,7 @@
     <ProjectGuid>{00496158-B574-47B6-A3E7-47B2D8F7EDF3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Controle_Mesas</RootNamespace>
-    <AssemblyName>Controle de Mesas - BTEK</AssemblyName>
+    <AssemblyName>BtekMesas</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Btek-somente-Logo.ico</ApplicationIcon>
+    <ApplicationIcon>logomesa.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>6D1318E7CC96CB85FD078207697B4F3E60F7570F</ManifestCertificateThumbprint>
@@ -303,6 +303,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Btek-somente-Logo.ico" />
+    <Content Include="logomesa.ico" />
+    <None Include="Resources\editarcinza.png" />
+    <None Include="Resources\selecionarcinz.png" />
+    <None Include="Resources\pesquisarcinza.png" />
+    <None Include="Resources\mostrarcinza.png" />
+    <None Include="Resources\carrinhoVermelho2.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

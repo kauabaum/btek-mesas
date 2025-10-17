@@ -75,7 +75,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Controle_Mesas.Properties.Resources.Btek_somente_Logo;
+            this.pictureBox1.BackgroundImage = global::Controle_Mesas.Properties.Resources.carrinhoVermelho2;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(8, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -86,11 +86,10 @@
             // btnMostrarTodos
             // 
             this.btnMostrarTodos.BackColor = System.Drawing.Color.Transparent;
-            this.btnMostrarTodos.BackgroundImage = global::Controle_Mesas.Properties.Resources.mostratudo;
+            this.btnMostrarTodos.BackgroundImage = global::Controle_Mesas.Properties.Resources.mostrarcinza;
             this.btnMostrarTodos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMostrarTodos.FlatAppearance.BorderSize = 0;
             this.btnMostrarTodos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnMostrarTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarTodos.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrarTodos.Location = new System.Drawing.Point(529, 12);
             this.btnMostrarTodos.Name = "btnMostrarTodos";
@@ -103,11 +102,10 @@
             // btPesquisar
             // 
             this.btPesquisar.BackColor = System.Drawing.Color.Transparent;
-            this.btPesquisar.BackgroundImage = global::Controle_Mesas.Properties.Resources.pesquisar2;
+            this.btPesquisar.BackgroundImage = global::Controle_Mesas.Properties.Resources.pesquisarcinza;
             this.btPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btPesquisar.FlatAppearance.BorderSize = 0;
             this.btPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btPesquisar.ForeColor = System.Drawing.Color.Transparent;
             this.btPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btPesquisar.Location = new System.Drawing.Point(449, 12);
@@ -122,7 +120,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(604, 648);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnMostrarTodos);

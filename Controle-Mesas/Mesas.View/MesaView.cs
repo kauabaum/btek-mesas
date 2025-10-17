@@ -202,7 +202,7 @@ namespace Controle_Mesas
         {
             decimal total = pedidoDAO.ObterTotalMesa(mesaId);
             txtValor.Text = $"Total: R$ {total:N2}";
-            txtValor.BackColor = Color.FromArgb(223, 223, 223);
+            txtValor.BackColor = Color.FromArgb(242, 242, 247);
         }
         private void btnFinalizarMesa_Click(object sender, EventArgs e)
         {
